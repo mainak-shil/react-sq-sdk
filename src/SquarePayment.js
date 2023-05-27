@@ -4,6 +4,7 @@ import { CreditCard, PaymentForm } from "react-square-web-payments-sdk";
 // const REACT_APP_SQUARE_URL=https://js.squareup.com/v2/paymentform
 const REACT_APP_SQUARE_APP_ID = "sandbox-sq0idb-q2q-tylxR9DQ2GQodP7MdQ";
 const REACT_APP_LOCATION_ID = "LVAWCPCSSWABF";
+
 const SquarePaymentForm = () => (
   <PaymentForm
     /**
