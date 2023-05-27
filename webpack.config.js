@@ -9,20 +9,24 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.?js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env", "@babel/preset-react"],
-          },
+        test: path.join(__dirname, "."),
+        exclude: /(node_modules)/,
+        loader: "babel-loader",
+        options: {
+          presets: [
+            "@babel/preset-env",
+            "@babel/react",
+            {
+              plugins: ["@babel/plugin-proposal-class-properties"],
+            },
+          ],
         },
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(__dirname, "src", "index.html"),
-    }),
-  ],
+  // plugins: [
+  //   new HtmlWebpackPlugin({
+  //     template: path.join(__dirname, "src", "index.html"),
+  //   }),
+  // ],
 };

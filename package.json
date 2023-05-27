@@ -1,7 +1,7 @@
 {
   "name": "react-square-sdk",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "src/index.js",
   "dependencies": {
     "autoprefixer": "10.4.5",
@@ -46,6 +46,7 @@
     "html-webpack-plugin": "^5.5.1",
     "webpack": "^5.84.1",
     "webpack-cli": "^5.1.1",
-    "webpack-dev-server": "^4.15.0"
+    "webpack-dev-server": "^4.15.0",
+    "babel-plugin-transform-class-properties": "^6.24.1"
   }
 }
