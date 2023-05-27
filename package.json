@@ -1,7 +1,7 @@
 {
   "name": "react-square-sdk",
   "private": true,
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "src/index.js",
   "dependencies": {
     "autoprefixer": "10.4.5",
